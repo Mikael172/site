@@ -4,48 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SunByte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>SunByte</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        
+ 
+  <header class="banner">
+    <h1 class="banner__title">SunByte</h1>
+
+    <nav class="banner__menu">
+      <ul class="banner__menu-list">
+        <li class="banner__menu-item"><a href="#home" class="banner__menu-link">Home</a></li>
+        <li class="banner__menu-item"><a href="#sobre" class="banner__menu-link">Sobre Nós</a></li>
+        <li class="banner__menu-item"><a href="#servicos" class="banner__menu-link">Serviços</a></li>
+        <li class="banner__menu-item"><a href="#depoimentos" class="banner__menu-link">Depoimentos</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="banner">
-    <h2>Bem-vindo à SunByte</h2>
-    <p>Soluções digitais criativas e inteligentes.</p>
+  <section id="home" class="home">
+    <h2 class="home__title">Bem-vindo à SunByte</h2>
+    <p class="home__text">Soluções digitais criativas e inteligentes.</p>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma agência digital focada em inovação, design e resultados.</p>
+  <section id="sobre" class="sobre">
+    <h2 class="sobre__title">Sobre Nós</h2>
+    <p class="sobre__text">Somos uma agência digital focada em inovação, design e resultados.</p>
   </section>
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <article>Design Gráfico</article>
-      <article>Desenvolvimento Web</article>
-      <article>Branding</article>
+  <section id="servicos" class="servicos">
+    <h2 class="servicos__title">Serviços</h2>
+
+    <div class="servicos__grid">
+      <article class="servicos__item servicos__item--design">Design Gráfico</article>
+      <article class="servicos__item servicos__item--dev">Desenvolvimento Web</article>
+      <article class="servicos__item servicos__item--branding">Branding</article>
     </div>
   </section>
 
-  <section id="depoimentos">
-    <h2>Depoimentos</h2>
-    <blockquote>"Excelente atendimento e resultados incríveis!" – Cliente Fictício</blockquote>
+  <section id="depoimentos" class="depoimentos">
+    <h2 class="depoimentos__title">Depoimentos</h2>
+    <blockquote class="depoimentos__quote">
+      "Excelente atendimento e resultados incríveis!" – Cliente Fictício
+    </blockquote>
   </section>
 
-  <footer>
-    <p>&copy; 2025 SunByte - Todos os direitos reservados</p>
+  <footer class="rodape">
+    <p class="rodape__conteudo">&copy; 2025 SunByte - Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
