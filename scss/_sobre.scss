@@ -1,0 +1,16 @@
+@use 'variavel';
+@use 'sass:math';
+.sobre {
+  &__title {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+
+  &__text {
+    line-height: 1.6;
+    color: variavel.$cor-letra;
+  }
+}
+

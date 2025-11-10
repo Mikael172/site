@@ -1,0 +1,43 @@
+@use 'variavel' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.servicos {
+  padding: 4rem 2rem;
+  color: v.$cor-letra;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #36BFB1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__item {
+    background: #038C73;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: #36BFB1;
+      color: #0D0D0D;
+      transform: scale(1.05);
+    }
+  }
+}

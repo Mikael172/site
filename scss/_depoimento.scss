@@ -1,0 +1,20 @@
+@use 'variavel';
+@use 'sass:math'; 
+
+.depoimentos { 
+  padding: math.div(variavel.$borda, 1) * 2 variavel.$borda; 
+  text-align: center;
+
+  &__title { 
+    font-size: variavel.$borda;
+    color: #36BFB1;
+    margin-bottom: variavel.$borda;
+  }
+
+  &__quote { 
+    font-style: variavel.$fonte-depoimento;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+} 

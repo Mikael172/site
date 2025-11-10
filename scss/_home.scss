@@ -1,0 +1,39 @@
+@use 'variavel';
+@use 'sass:math';
+
+.home { 
+
+  height: 70vh;
+  background: variavel.$gradiente2;
+  color: variavel.$cor-letra;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: variavel.$borda;
+
+  &__title { 
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__text { 
+    max-width: 700px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      font-size: math.div(variavel.$borda, 2); 
+    }
+  }
+} 

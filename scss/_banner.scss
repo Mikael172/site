@@ -1,0 +1,51 @@
+@use 'variavel';
+@use 'sass:math';
+
+.banner { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5vw;
+  
+  
+  background: variavel.$cor-fundo1;
+  color: variavel.$cor-letra;
+  box-shadow: variavel.$sombra;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  &__title { 
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  &__menu-list { 
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+  }
+
+  &__menu-link { 
+    color: variavel.$cor-letra;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  
+    &:hover,
+    &--active {
+      color: #36BFB1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    &__menu-list {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+} 
